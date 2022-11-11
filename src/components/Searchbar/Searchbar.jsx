@@ -6,7 +6,6 @@ import { Input, Header, SearchForm, SearchBtn } from './Searchbar.styled';
 
 const schema = yup.object().shape({
   searchInput: yup.string().min(2, 'Too short').max(50, 'Too long'),
-  // .required('This field can not be empty'),
 });
 
 const initialValues = {
